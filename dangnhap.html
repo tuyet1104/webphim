@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM-Đăng nhập</title>
+    <!-- Link to CSS -->
+    <link href="panda.css" rel="stylesheet" type="text/css">
+    <!-- Link Swiper CSS -->
+    <link href="swiper-bundle.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="trangchu.html"> <img src="images/logo.png" alt="panda_logo" id="logo"></a>
+            <div class="search-box">
+                <a href="timkiem.html"><i class='bx bx-search-alt'></i></a>
+                <i class='bx bx-bell'></i>
+                <a href="dangnhap.html"><i class='bx bx-user-circle'></i></a>
+            </div>
+            <div class="navbar">
+                <i class='bx bx-menu' onclick="toggleMenu()"></i>
+                <ul class="main-nav" id="menuu">
+                    <li>
+                        <a href="trangchu.html" class="nav-link">
+                            <i class='bx bx-home'></i>
+                            <span class="nav-link-title">Trang Chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="phimbo.html" class="nav-link">
+                            <i class='bx bx-movie'></i></i>
+                            <span class="nav-link-title">Phim Bộ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theloai.html" class="nav-link">
+                            <i class='bx bx-category'></i>
+                            <span class="nav-link-title">Thể Loại</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quocgia.html" class="nav-link">
+                            <i class='bx bx-globe'></i>
+                            <span class="nav-link-title">Quốc Gia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sapchieu.html" class="nav-link">
+                            <i class='bx bxs-hourglass'></i>
+                            <span class="nav-link-title">Sắp Chiếu</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Log in -->
+    <div class="wrapper">
+        <form action="">
+            <h1>ĐĂNG NHẬP</h1>
+            <div class="input-dn">
+                <i class='bx bx-user-circle'></i>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-dn">
+                <i class='bx bx-lock'></i>
+                <input id="passwordinput" type="password" placeholder="Password" required>
+                <i id="showicon" onclick="hidepassword()" class='bx bx-show'></i>
+                <i id="hideicon" onclick="showpassword()" class='bx bx-hide'></i>
+            </div>
+            <div class="remember-fogot">
+                <label>
+                    <input type="checkbox">Ghi nhớ mật khẩu
+                </label>
+                <a href="quenmk.html">Quên mật khẩu?</a>
+            </div>
+            <button type="submit" class="btn-dn">ĐĂNG NHẬP</button>
+            <div class="dn-khac">
+                <p>Hoặc đăng nhập bằng</p>
+                <nav class="fb-gg">
+                    <a href="#"><img src="images/fb.png"></a>
+                    <a href="#"><img src="images/gg.png"></a>
+                    <a href="#"><img src="images/ig.png"></a>
+                </nav>
+            </div>
+            <div class="form-dk">
+                <p>
+                    Bạn chưa có tài khoản?
+                    <a href="dangki.html">Đăng kí</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Link Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Link to JS -->
+    <script src="panda.js"></script>
+</body>
+
+</html>
