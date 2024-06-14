@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Movie</title>
+    <!-- Link to CSS -->
+    <link href="panda.css" rel="stylesheet" type="text/css">
+    <!-- Link Swiper CSS -->
+    <link href="swiper-bundle.min.css" rel="stylesheet">
+    <!-- Link Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="trangchu.html"> <img src="images/logo.png" alt="panda_logo" id="logo"></a>
+            <div class="search-box">
+                <a href="timkiem.html"><i class='bx bx-search-alt'></i></a>
+                <i class='bx bx-bell'></i>
+                <a href="dangnhap.html"><i class='bx bx-user-circle'></i></a>
+            </div>
+
+            <div class="navbar">
+                <i class='bx bx-menu' onclick="toggleMenu()"></i>
+                <ul class="main-nav" id="menuu">
+                    <li>
+                        <a href="trangchu.html" class="nav-link nav-active">
+                            <i class='bx bx-home'></i>
+                            <span class="nav-link-title">Trang Chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="phimbo.html" class="nav-link">
+                            <i class='bx bx-movie'></i></i>
+                            <span class="nav-link-title">Phim Bộ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theloai.html" class="nav-link">
+                            <i class='bx bx-category'></i>
+                            <span class="nav-link-title">Thể Loại</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quocgia.html" class="nav-link">
+                            <i class='bx bx-globe'></i>
+                            <span class="nav-link-title">Quốc Gia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sapchieu.html" class="nav-link">
+                            <i class='bx bxs-hourglass'></i>
+                            <span class="nav-link-title">Sắp Chiếu</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Main -->
+    <section class="home container" id="home">
+        <div class="poster-content swiper">
+            <div class="swiper-wrapper">
+                <!-- Movies 0 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/poster1.jpg" alt="Lovely Runner" class="home-img">
+                        <div class="home-text">
+                            <a href="lovelyrunner.html" class="watch-btn">
+                                <i class='bx bx-right-arrow'></i>
+                                <span>Xem ngay</span>
+                            </a>
+                            <p>Thứ 2, Thứ 3 hàng tuần</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 1 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/poster3.jpg" alt="Kung Fu Panda" class="home-img">
+                        <div class="home-text">
+                            <a href="#" class="watch-btn">
+                                <i class='bx bx-right-arrow'></i>
+                                <span>Xem ngay</span>
+                            </a>
+                            <p>12/12 khởi chiếu toàn quốc</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/poster2.jpg" alt="Squid Game" class="home-img">
+                        <div class="home-text">
+                            <a href="#" class="watch-btn">
+                                <i class='bx bx-right-arrow'></i>
+                                <span>Xem ngay</span>
+                            </a>
+                            <p>Thứ 7 hàng tuần</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 3 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/poster4.jpg" alt="Mèo Béo Siêu Quậy" class="home-img">
+                        <div class="home-text">
+                            <a href="meobeosieuquay.html" class="watch-btn">
+                                <i class='bx bx-right-arrow'></i>
+                                <span>Xem ngay</span>
+                            </a>
+                            <p>31/5 khởi chiếu toàn quốc</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 4 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/poster5.jpg" alt="Hồ Yêu Tiểu Hồng Nương" class="home-img">
+                        <div class="home-text">
+                            <a href="#" class="watch-btn">
+                                <i class='bx bx-right-arrow'></i>
+                                <span>Xem ngay</span>
+                            </a>
+                            <p>Thứ 2, Thứ 3 hàng tuần</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-btn" id="swiper-btn-0">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Phim Hot -->
+    <section class="thinhhanh container" id="thinhhanh">
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">PHIM THỊNH HÀNH</h2>
+            <div class="swiper-btn" id="swiper-btn-1">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <!-- Movies 0 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/hoyeu.jpg" alt="Hồ Yêu Tiểu Hồng Nương" class="movie-box-img">
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="#" class="box-text-link">
+                                <h2 class="movie-title">Hồ Yêu Tiểu Hồng Nương</h2>
+                                <span class="movie-type">Fox Spirit Matchmaker 1</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 1 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/Lovelyrunner.jpg" alt="Lovely Runner" class="movie-box-img">
+                        <a href="lovelyrunner.html" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="lovelyrunner.html" class="box-text-link">
+                                <h2 class="movie-title">Cõng Anh Mà Chạy</h2>
+                                <span class="movie-type">Lovely Runner</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/queenoftears.jpg" alt="Queen Of Tears" class="movie-box-img">
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="#" class="box-text-link">
+                                <h2 class="movie-title">Nữ Hoàng Nước Mắt</h2>
+                                <span class="movie-type">Queen Of Tears</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 3 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/daophopiano.jpg" alt="Đào, Phở Và Piano" class="movie-box-img">
+                        <a href="daophovapiano.html" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="daophovapiano.html" class="box-text-link">
+                                <h2 class="movie-title">Đào, Phở Và Piano</h2>
+                                <span class="movie-type"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 4 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/conan.jpg" alt="Conan" class="movie-box-img">
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="#" class="box-text-link">
+                                <h2 class="movie-title">Thám Tử Lừng Danh Conan</h2>
+                                <span class="movie-type">Conan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 5 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/quatmotrungma.jpg" alt="Quật Mộ Trùng Ma" class="movie-box-img">
+                        <a href="quatmotrungma.html" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="quatmotrungma.html" class="box-text-link">
+                                <h2 class="movie-title">Quật Mộ Trùng Ma</h2>
+                                <span class="movie-type">Exhuma</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 6 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/khianhchayvephiaem.jpg" alt="Khi Anh Chạy Về Phía Em" class="movie-box-img">
+                        <a href="khianhchayvephiaem.html" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="khianhchayvephiaem.html" class="box-text-link">
+                                <h2 class="movie-title">Khi Anh Chạy Về Phía Em</h2>
+                                <span class="movie-type">I When Fly Towards You</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies 7 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="images/quycau.jpg" alt="Quỷ Cẩu" class="movie-box-img">
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow'></i>
+                        </a>
+                        <div class="box-text">
+                            <a href="#" class="box-text-link">
+                                <h2 class="movie-title">Quỷ Cẩu</h2>
+                                <span class="movie-type"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Phim Bộ -->
+    <section class="phimbo container" id="phimbo">
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">PHIM BỘ HOT</h2>
+        </div>
+        <!-- Content -->
+        <div class="movies-content">
+            <!-- Movies 1 -->
+            <div class="movie-box">
+                <img src="images/chausinhnhuco.jpg" alt="Trường An Như Cố" class="movie-box-img">
+                <a href="truongannhuco.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="truongannhuco.html" class="box-text-link">
+                        <h2 class="movie-title">Trường An Như Cố</h2>
+                        <span class="movie-type">One And Only</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 2 -->
+            <div class="movie-box">
+                <img src="images/chiecbatlua.jpg" alt="Lighter And Princess" class="movie-box-img">
+                <a href="chiecbatluavavaycongchua.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="chiecbatluavavaycongchua.html" class="box-text-link">
+                        <h2 class="movie-title">Chiếc Bật Lửa Và Váy<br>Công Chúa</h2>
+                        <span class="movie-type">Lighter And Princess</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 3 -->
+            <div class="movie-box">
+                <img src="images/Lovelyrunner.jpg" alt="Lovely Runner" class="movie-box-img">
+                <a href="lovelyrunner.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="lovelyrunner.html" class="box-text-link">
+                        <h2 class="movie-title">Cõng Anh Mà Chạy</h2>
+                        <span class="movie-type">Lovely Runner</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 4 -->
+            <div class="movie-box">
+                <img src="images/queenoftears.jpg" alt="Queen Of Tears" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Nữ Hoàng Nước Mắt</h2>
+                        <span class="movie-type">Queen Of Tears</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 5 -->
+            <div class="movie-box">
+                <img src="images/cuocchienthuongluu.jpg" alt="Penthouse" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Cuộc Chiến Thượng Lưu</h2>
+                        <span class="movie-type">Penthouse</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 6 -->
+            <div class="movie-box">
+                <img src="images/truongnguyettanminh.jpg" alt="Trường Nguyệt Tẫn Minh" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Trường Nguyệt Tẫn Minh</h2>
+                        <span class="movie-type">Till The End Of The Moon</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Movies 7 -->
+            <div class="movie-box">
+                <img src="images/khianhchayvephiaem.jpg" alt="Khi Anh Chạy Về Phía Em" class="movie-box-img">
+                <a href="khianhchayvephiaem.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="khianhchayvephiaem.html" class="box-text-link">
+                        <h2 class="movie-title">Khi Anh Chạy Về Phía Em</h2>
+                        <span class="movie-type">I When Fly Towards You</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 8 -->
+            <div class="movie-box">
+                <img src="images/squidgame.jpg" alt="Squid Game" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Trò Chơi Con Mực</h2>
+                        <span class="movie-type">Squid Game</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 9 -->
+            <div class="movie-box">
+                <img src="images/hoyeu.jpg" alt="Hồ Yêu Tiểu Hồng Nương" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Hồ Yêu Tiểu Hồng Nương</h2>
+                        <span class="movie-type">Fox Spirit Matchmaker 1</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 10 -->
+            <div class="movie-box">
+                <img src="images/venhadicon.jpeg" alt="Về Nhà Đi Con" class="movie-box-img">
+                <a href="venhadicon.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="venhadicon.html" class="box-text-link">
+                        <h2 class="movie-title">Về Nhà Đi Con</h2>
+                        <span class="movie-type"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Phim Hoạt Hình -->
+    <section class="phimhoathinh container" id="phimhoathinh">
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title">PHIM HOẠT HÌNH</h2>
+        </div>
+        <!-- Content -->
+        <div class="movies-content">
+            <!-- Movies 1 -->
+            <div class="movie-box">
+                <img src="images/doremon.jpg" alt="Doraemon" class="movie-box-img">
+                <a href="doraemon.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="doraemon.html" class="box-text-link">
+                        <h2 class="movie-title">Chú Mèo Máy Đến Từ<br>Tương Lai</h2>
+                        <span class="movie-type">Doraemon</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 2 -->
+            <div class="movie-box">
+                <img src="images/meobeosieuquay.jpg" alt="Mèo Béo Siêu Quậy" class="movie-box-img">
+                <a href="meobeosieuquay.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="meobeosieuquay.html" class="box-text-link">
+                        <h2 class="movie-title">Mèo Béo Siêu Quậy</h2>
+                        <span class="movie-type">Garfield</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 3 -->
+            <div class="movie-box">
+                <img src="images/conan.jpg" alt="Conan" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Thám Tử Lừng Danh Conan</h2>
+                        <span class="movie-type">Conan</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 4 -->
+            <div class="movie-box">
+                <img src="images/winx.jpg" alt="Winx" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Winx Công Chúa Phép Thuật</h2>
+                        <span class="movie-type">Winx Club</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Movies 3 -->
+            <div class="movie-box">
+                <img src="images/hellojadoo.jpg" alt="Hello Jadoo" class="movie-box-img">
+                <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow'></i>
+                </a>
+                <div class="box-text">
+                    <a href="#" class="box-text-link">
+                        <h2 class="movie-title">Xin Chào Jadoo</h2>
+                        <span class="movie-type">Hello Jadoo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="main-footer">
+            <a href="trangchu.html"><img src="images/logo.png" alt="panda_logo" id="logo-footer"></a>
+            <div class="main-footer-1">
+                <h3>Panda Movie</h3>
+                <p>Giới Thiệu</p>
+                <p>Các Gói Xem Phim</p>
+                <p>Thông Tin</p>
+            </div>
+            <div class="main-footer-1">
+                <h3>Dịch Vụ</h3>
+                <p>Các Gói Dịch Vụ</p>
+                <p>Quảng Cáo</p>
+            </div>
+            <div class="main-footer-1">
+                <h3>Hỗ Trợ</h3>
+                <p>Trung Tâm Trợ Giúp</p>
+                <p>Liên Hệ:</p>
+                <p><i class='bx bx-phone'></i>1900099999</p>
+                <p><i class='bx bxl-gmail'></i>hotropanda@gmail.com</p>
+            </div>
+            <div class="main-footer-1">
+                <h3>Quy Định</h3>
+                <p>Điều Khoản Sử Dụng</p>
+                <p>Chính Sách Thanh Toán </p>
+                <p>Chính Sách Bảo Mật</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Link Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Link to JS -->
+    <script src="panda.js"></script>
+</body>
+
+</html>
